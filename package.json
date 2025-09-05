@@ -1,0 +1,28 @@
+{
+  "name": "class-notes-local-pwa",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "postbuild": "cp dist/index.html dist/404.html || copy dist\\index.html dist\\404.html",
+    "deploy": "echo 'Use GitHub Actions (already included) to deploy'"
+  },
+  "dependencies": {
+    "dexie": "^4.0.4",
+    "jszip": "^3.10.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.27.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.3.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.2.0",
+    "vite-plugin-pwa": "^0.20.0"
+  }
+}
