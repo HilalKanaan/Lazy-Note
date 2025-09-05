@@ -28,7 +28,8 @@ jobs:
       - name: Build
         env:
           # Replace REPO_NAME with your repository name (exact case)
-          GHPAGES_BASE: "/REPO_NAME/"
+          GHPAGES_BASE: "/Lazy-Note/"
+
         run: npm run build
 
       - name: Deploy
